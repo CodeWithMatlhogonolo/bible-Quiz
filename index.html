@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bible Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Bible Quiz App</h1>
+    </header>
+
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <div class="progress-text">
+        <span id="question-number">Question 1 of 5</span>
+        <span id="percent">20% Complete</span>
+      </div>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question"></div>
+      <div class="options"></div>
+    </div>
+
+    <div class="navigation">
+      <button class="btn" id="prevBtn">Previous</button>
+      <button class="btn" id="nextBtn">Next</button>
+    </div>
+
+    <div class="score-container" style="display:none;">
+      <div class="result">Your score: <span id="score">0</span> / 5</div>
+      <div class="timer">Time left: <span id="time">30</span>s</div>
+    </div>
+
+    <button class="restart-btn" style="display:none;">Restart Quiz</button>
+  </div>
+
+  <footer class="footer">
+    © 2025 MT TOLO
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
